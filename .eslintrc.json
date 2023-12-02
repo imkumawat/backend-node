@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["plugin:security/recommended", "airbnb-base", "prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "no-console": 2,
+    "no-unused-vars": 2,
+    "no-await-in-loop": 2,
+    "no-return-await": 2,
+    "import/no-extraneous-dependencies": 0,
+    "camelcase": 2,
+    "no-param-reassign": 0,
+    "security/detect-object-injection": 0
+  }
+}

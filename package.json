@@ -9,6 +9,12 @@
     "lint": "npx lint-staged",
     "husky-install": "husky install"
   },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/imkumawat/backend-node.git"
@@ -61,17 +67,5 @@
     "lint-staged": "^13.1.0",
     "nodemon": "^3.0.2",
     "prettier": "^2.8.2"
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint --cache --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run lint"
-    }
   }
 }
