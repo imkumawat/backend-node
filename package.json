@@ -7,7 +7,7 @@
     "start": "node src/server.js",
     "dev": "cross-env NODE_ENV=development env=localhost nodemon src/server.js",
     "lint": "npx lint-staged",
-    "husky-install": "husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.js": [

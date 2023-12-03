@@ -65,7 +65,7 @@ NodeJs backend server
                     "start": "node src/server.js",
                     "dev": "cross-env NODE_ENV=development env=localhost nodemon src/server.js",
                     "lint": "npx lint-staged",
-                    "husky-install": "husky install"
+                    "prepare": "husky install"
                     },
 
                     "lint-staged": {
@@ -77,7 +77,7 @@ NodeJs backend server
 
             1.5 Open terminal in project directory and execute follwing commands
 
-                npm run husky-install
+                npm run prepare
                 npx husky add .husky/pre-commit "npm run lint"
                 git add .
                 git commit -m "Keep calm and commit"
